@@ -22,7 +22,6 @@ class PromotionActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val intentFromAdapter = intent
 
         //intentFromAdapter.getSerializableExtra("chosenHero", SuperHero::class.java)
