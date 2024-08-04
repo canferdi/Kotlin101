@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RenderSettings">
     <option name="showDecorations" value="true" />
     <option name="useLiveRendering" value="false" />
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RenderSettings">
+    <option name="showDecorations" value="true" />
+    <option name="useLiveRendering" value="false" />
+  </component>
+>>>>>>> d89821e1393b9b2bfb18160fe1a3c62bced9418b
 </project>

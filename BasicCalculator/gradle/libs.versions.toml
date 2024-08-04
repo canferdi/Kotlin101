@@ -1,5 +1,9 @@
 [versions]
+<<<<<<< HEAD
 agp = "8.5.1"
+=======
+agp = "8.4.2"
+>>>>>>> d89821e1393b9b2bfb18160fe1a3c62bced9418b
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -7,7 +11,11 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
+<<<<<<< HEAD
 activity = "1.9.1"
+=======
+activity = "1.9.0"
+>>>>>>> d89821e1393b9b2bfb18160fe1a3c62bced9418b
 constraintlayout = "2.1.4"
 
 [libraries]
