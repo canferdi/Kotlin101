@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.ferdican.navigationcomponentsexample.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/toSecondPage"
+            app:destination="@id/secondPageFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPageFragment"
+        android:name="com.ferdican.navigationcomponentsexample.SecondPageFragment"
+        android:label="fragment_second_page"
+        tools:layout="@layout/fragment_second_page" >
+        <action
+            android:id="@+id/toThirdPage"
+            app:destination="@id/thirdPageScreen"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/secondToMain"
+            app:destination="@id/mainPageFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="person"
+            app:argType="com.ferdican.navigationcomponentsexample.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdPageScreen"
+        android:name="com.ferdican.navigationcomponentsexample.ThirdPageScreen"
+        android:label="fragment_third_page_screen"
+        tools:layout="@layout/fragment_third_page" >
+        <action
+            android:id="@+id/thirdToSecond"
+            app:destination="@id/secondPageFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>
